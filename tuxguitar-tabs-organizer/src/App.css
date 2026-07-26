@@ -1,0 +1,133 @@
+/* src/App.css */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #14141a;
+  color: #e8e8ec;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.app {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.app-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+.botones-carpeta {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  background: #2a2a35;
+  color: #e8e8ec;
+  border: 1px solid #3d3d4a;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+button:hover:not(:disabled) {
+  background: #383845;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.error {
+  color: #ff6b6b;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.combinacion {
+  margin-bottom: 40px;
+  padding: 20px;
+  background: #1c1c24;
+  border-radius: 12px;
+  border: 1px solid #2e2e3a;
+}
+
+.combinacion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.combinacion-header h2 {
+  margin: 0;
+  font-size: 1.15rem;
+}
+
+.grid-cuadrados {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 12px;
+}
+
+.cuadrado {
+  background: #24242e;
+  border: 1px solid #34343f;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 0.8rem;
+  word-break: break-word;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.cuadrado-sorteado {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  background: linear-gradient(145deg, #2d2440, #241f38);
+  border-color: #4a3b6e;
+}
+
+.categoria-label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #b892ff;
+  font-weight: 600;
+}
+
+.nombre-archivo {
+  font-size: 0.8rem;
+  color: #e8e8ec;
+}
+
+.bloque-categoria {
+  margin-bottom: 28px;
+}
+
+.bloque-categoria h3 {
+  font-size: 0.95rem;
+  color: #a8a8b8;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #2e2e3a;
+  padding-bottom: 6px;
+}
