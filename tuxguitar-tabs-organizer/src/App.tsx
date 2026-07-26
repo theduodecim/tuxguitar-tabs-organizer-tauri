@@ -107,7 +107,7 @@ function App() {
       try {
         await abrirArchivo(estado.ruta, nombreArchivo);
       } catch (e) {
-        setError(`No se pudo abrir "${nombreArchivo}". ¿Tenés un programa asociado a .tg?`);
+        setError(`No se pudo abrir "${nombreArchivo}": ${String(e)}`);
         console.error(e);
       }
     },
